@@ -1,4 +1,18 @@
+# Ignore data folder, but not the database import file.
 data/*
 !data/dhon.sql
-assets/
+
+# Ignore all assets, but keep folders.
+# Dota
+assets/img/dota/heroes/*
+!assets/img/dota/heroes/.gitkeep
+assets/img/dota/items/*
+!assets/img/dota/items/.gitkeep
+# HoN
+assets/img/hon/heroes/*
+!assets/img/hon/heroes/.gitkeep
+assets/img/hon/items/*
+!assets/img/hon/items/.gitkeep
+
+# Ignore the credentials file. We don't want credentials in our repo
 credentials.php
