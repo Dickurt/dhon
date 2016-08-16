@@ -1,0 +1,209 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #222;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 60px auto;
+	background: #ddd;
+	border-radius: 5px;
+}
+
+.banner {
+	height: 200px;
+	line-height: 200px;
+	background: #333;
+	font-weight: 800;
+	font-size: 72px;
+	text-align: center;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.banner a  {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+.banner a:hover  {
+	color: #aaa;
+}
+
+.menu {
+	display: inline-block;
+	width: inherit;
+	height: 40px;
+	border-bottom: 10px solid #444;
+}
+
+.menu ul {
+	list-style: none;
+	margin: 0px 40px;
+	padding: 0;
+}
+
+.menu ul li {
+	display: inline-block;
+}
+
+.menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	line-height: 40px;
+	padding: 0px 20px;
+}
+
+.menu ul li a:hover {
+	background: #eee;
+}
+
+.content-wrapper {
+	display: inline-block;
+	width: inherit;
+	margin: 0px;
+}
+
+.content {
+	width: 900px;
+	margin: 20px auto;
+}
+
+.tile-list ul {
+	margin: 0;
+	padding: 0;
+}
+
+.tile-list ul li ul .equivalent {
+	display: none;
+	position: absolute;
+	width: 120px;
+	margin: -50px 20px;
+	background: #222;
+	padding: 10px 5px;
+	color: #eee;
+	border-radius: 7px;
+	word-wrap: break-word;
+}
+
+.tile-list ul li.item ul .equivalent {
+	height: 120px;
+}
+
+.tile-list ul li ul .equivalent.hon .icon {
+	height: 80px;
+}
+
+.tile-list ul li ul .equivalent.dota .icon {
+	height: 45px;
+}
+
+.tile-list ul li.item ul .equivalent.dota .icon {
+	width: 85px;
+	height: 64px;
+}
+
+.tile-list ul li:hover {
+	background: #eee;
+}
+
+.tile-list ul li:hover > ul .equivalent {
+	display: block;
+}
+
+.tile {
+	display: inline-block;
+	padding: 10px 5px;
+	border-radius: 7px;
+	width: 130px;
+	vertical-align: top;
+	word-wrap: break-word;
+}
+
+.tile.hon {
+	height: 120px;
+	margin: 5px 3px;
+}
+
+.tile.dota {
+	height: 90px;
+	margin: 10px 3px;
+}
+
+.tile.hon .icon {
+	display: block;
+	margin: 0px auto;
+	width: 80px;
+	height: 80px;
+}
+
+.tile.dota .icon {
+	display: block;
+	margin: 0px auto;
+	width: 80px;
+	height: 45px;
+}
+
+.tile.item.dota .icon {
+	width: 85px;
+	height: 64px;
+}
+
+.tile h2 {
+	margin: 0;
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
+}
+
+.left {
+	width: 425px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.right {
+	width: 430px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.search {
+	background: #444;
+	padding: 20px;
+	border-radius: 10px;
+	color: #eee;
+}
+
+.search-result {
+	background: #333;
+	float: right;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.search-page {
+	margin: 20px auto;
+	width: 400px;
+}
+
+.search-bar {
+	width: 200px;
+	height: 20px;
+	border-radius: 20px;
+	outline: 0;
+	border: 0;
+	padding: 2px 6px 2px 30px;
+	background-image: url('assets/icons/search.png');
+	background-repeat: no-repeat;
+	background-position: 2% center;
+}
+
+.search-page-result {
+	background: #222;
+	border-radius: 5px;
+	width: 360px;
+	padding: 40px;
+	margin: 0px auto;
+	color: #fff;
+}

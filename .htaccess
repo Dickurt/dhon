@@ -1,0 +1,16 @@
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  # Remove .php extension from the url
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}\.php -f
+  RewriteRule ^(.*)$ $1.php
+
+  # Deny direct access to credentials.php
+  <Files credentials.php>
+      Order Deny,Allow
+      Deny from all
+      Allow from 127.0.0.1
+  </Files>
+</IfModule>
