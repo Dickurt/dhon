@@ -1,3 +1,4 @@
-data/
+data/*
+!data/dhon.sql
 assets/
 credentials.php
