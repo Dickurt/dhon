@@ -11,7 +11,11 @@ Played HoN for years and now trying Dota for the first time? Or the other way ar
 1. Copy the `credentials-example.php` file and rename it to `credentials.php`.
 2. Enter your database credentials there.
 3. Create a new database and import the `dhon.sql` file from the `data` directory.
-4. Done!
+4. Gather assets and put them in the corresponding `assets/img/` subfolders. More in the [paragraph below](#assets).
+5. Done!
+
+## <a name="assets"></a>Adding assets for heroes and items
+I'd rather not face any legal repercusions for using assets I did not create. Hence they are not being included in this repo. All assets are expected to be jpgs. And their names are derived from the database. E.g. the assets for "Abaddon", a Dota hero, will be retrieved as `assets/img/dota/heroes/abaddon.jpg`. Names are converted to lowercase. Spaces are replaced with underscores (`_`).
 
 ## Changing or creating conversions
 All hero conversions can be found in the hero_conversions table. Item conversions are found in the item_conversions table.
